@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>OrbitHub - Project Details</title>
+      <link rel="stylesheet" href="../style.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+
+   <body>
+
+      <header>
+         <div class="obj-width">
+            <a href="index.html"><img class="logo" src="../images/logo.gif" alt=""></a>
+
+            <i class='bx bx-menu' id="bar"></i>
+
+            <ul id="navbar">
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="../users/users.html">Browse People</a></li>
+               <li><a href="../createProject.html">Create Projects</a></li>
+               <li><a id="w-btn" href="../forms/welcomeform.html"><i class='bx bx-user'></i></a></li>
+
+            </ul>
+         </div>
+      </header>
+
+      <div id="jobDetails" class="extra-space obj-width">
+         <!-- <div class="job-header ">
+            <div class="job-img-row">
+               <img src="../images/google.png" alt="">
+               <div>
+                  <h2>Google companyName</h2>
+                  <span>Location: USA location</span>
+               </div>
+            </div>
+            <a id="g-btn" href="#">Apply Now</a>
+         </div>
+
+         <div class="features obj-width">
+
+            <div class="fe-box">
+               <div>
+                  <img src="../images/vacancy.png" alt="">
+                  <h3>Vacancy</h3>
+                  <p>01 vacancy</p>
+               </div>
+               <div>
+                  <img src="../images/fe 1.png" alt="">
+                  <h3>Position</h3>
+                  <p>Web developer title</p>
+               </div>
+               <div>
+                  <img src="../images/hour.png" alt="">
+                  <h3>Hours</h3>
+                  <p>50h / week hours</p>
+               </div>
+               <div>
+                  <img src="../images/salary.png" alt="">
+                  <h3>Salary</h3>
+                  <p>$35 - $45K rate</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="job-description sec-space">
+            <h3>Job Description</h3>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+               looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+               of letters, as opposed to using 'Content here, content here', making it look like readable English.
+               Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+               and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+               evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+               description</p>
+
+            <h3>Employment Status</h3>
+            <p>- Full-time av</p>
+
+            <h3>Workplace</h3>
+            <p>- Work from home workplace</p>
+
+            <h3>Educational Requirements</h3>
+            <p>- Bachelor degree in any Computer Science Course. education</p>
+
+            <h3>Experience Requirements</h3>
+            <p>- 2 to 5 year(s) experience</p>
+
+         </div> -->
+      </div>
+
+      <footer class="footer">
+         <div class="obj-width">
+            <div class="top">
+               <div>
+                  <img class="logo" src="../images/logo.gif" alt="">
+                  <p>All open source projects at one place.</p>
+               </div>
+               <div>
+                  <a href="#">
+                     <i class='bx bxl-facebook-square'></i>
+                  </a>
+                  <a href="#">
+                     <i class='bx bxl-instagram-alt'></i>
+                  </a>
+                  <a href="#">
+                     <i class='bx bxl-github'></i>
+                  </a>
+                  <a href="#">
+                     <i class='bx bxl-reddit'></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="bottom">
+               <div>
+                  <h3>Project</h4>
+                     <a href="#">Changelog</a>
+                     <a href="#">Status</a>
+                     <a href="#">License</a>
+                     <a href="#">All Versions</a>
+               </div>
+               <div>
+                  <h3>Community</h3>
+                  <a href="#">GitHub</a>
+                  <a href="#">Issues</a>
+                  <a href="#">Project</a>
+                  <a href="../coc.html"> Twitter</a>
+               </div>
+               <div>
+                  <h3>Help</h3>
+                  <a href="#">Support</a>
+                  <a href="#">Troubleshooting</a>
+                  <a href="#">Contact Us</a>
+               </div>
+               <div>
+                  <h3>Others</h3>
+                  <a href="#">Terms of Service</a>
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">License</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", () => {
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const index = urlParams.get("id");
+
+            const selectedJob = jCategory[index];
+
+            const jobDetailsContainer = document.getElementById("jobDetails");
+            jobDetailsContainer.innerHTML = `
+              
+               <div class="job-header">
+                  <div class="job-img-row">
+                     <img src=${selectedJob.image} alt="">
+                  </div>
+                  <div>
+                     <h2>${selectedJob.title}</h2>
+                     <p>🚀 Project Posted By: ${selectedJob.by}</p>
+                     <p>📝 ${selectedJob.abastract}</p>
+                  </div>
+                  <a id="g-btn" href="#">Contribute +</a>
+               </div>
+
+            <div class="features obj-width">
+
+               <div class="fe-box">
+                  <div>
+                     <img src="../images/fe 1.png" alt="">
+                     <h3>Skill Development</h3>
+                     <p>Enhance your technical skills, knowledge, and expertise in relevant areas, such as coding, project management, or design.</p>
+                  </div>
+                  <div>
+                     <img src="../images/vacancy.png" alt="">
+                     <h3>Portfolio Enhancement</h3>
+                     <p>Contributions to open-source projects can serve as a valuable addition to a contributor's portfolio or resume, showcasing their practical experience.</p>
+                  </div>
+                  <div>
+                     <img src="../images/fe 2.png" alt="">
+                     <h3>Networking Opportunities</h3>
+                     <p>Connect with like-minded individuals, professionals, and experts in the field, expanding their professional network.</p>
+                  </div>
+                  <div>
+                     <img src="../images/salary.png" alt="">
+                     <h3>Contributor Recognition</h3>
+                     <p>Many open-source projects acknowledge and credit contributors, providing recognition for their contributions in project documentation or on platforms like GitHub</p>
+                  </div>
+               </div>
+            </div>
+
+         <div class="job-description sec-space">
+            <h3>📕 Project Description</h3>
+            <p>${selectedJob.description}</p>
+
+            <h3>👨‍🏫 Contributor Roles</h3>
+            <div>- ${selectedJob.role}</div>
+
+            <h3>Workplace</h3>
+            <div>- ${selectedJob.workplace}</div>
+
+            <h3>🎯 Requirements</h3>
+            <div>${selectedJob.requirements}</div>
+
+            <h3>🎁 Project Documentation</h3>
+            <div>${selectedJob.documentation}</div>
+
+            <h3>⌚ Timeline and Milestones</h3>
+            <div>- ${selectedJob.timeline}</div>
+
+            <h3>🔗 Important Links</h3>
+            <div>
+               <a href="../coc.html">Code of Conduct</a>
+               <br>
+               <a href="">Respect for Intellectual Property</a>
+               <br>
+               <a href="">Why you should contribute?</a>
+            </div>
+
+            <a id="g-btn" href="#">Contribute +</a>
+
+         </div>
+`;
+         });
+      </script>
+
+      <script src="job-List.js"></script>
+      <script src="../script.js"></script>
+
+   </body>
+
+</html>

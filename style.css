@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  position: relative;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 60px;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#g-btn {
+  text-decoration: none;
+  background: #3b49df;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#kid-btn {
+  text-decoration: none;
+  background: #ffee05;
+  color: #222 !important;
+  font-weight: 600 !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sec-space {
+  padding: 4rem 0;
+}
+.extra-space {
+  padding-top: 8rem;
+}
+.obj-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #1b2b85;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style for the dropdown items */
+.dropdown-content li {
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+  background-color: #2d6ce0;
+}
+
+.dropdown-content li:hover {
+  background-color: #2052af;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#w-btn {
+  background: #fff;
+  color: #1f4a40;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+#w-btn i {
+  line-height: 80px;
+  padding: 0 2px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  color: #1b2b85;
+}
+
+#bar {
+  display: none;
+}
+
+/* footer */
+
+.footer {
+  background: #1b2b85;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top .logo {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.top i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.bottom {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: #fafafa;
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+
+#key {
+  font-size: 0.8rem;
+  background: #ffc710;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+#keywords {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+#keywords li {
+  color: #fff;
+  background: #2d7ea8;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Start Media Query */
+
+@media (max-width: 1300px) {
+  .sec-space {
+    padding: 4rem 0;
+  }
+  .extra-space {
+    padding-top: 8rem;
+  }
+  .obj-width {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 999px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 80px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #1b2b85;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    padding: 80px 0 0 10px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #navbar.active {
+    right: 0;
+  }
+
+  .dropdown-content li {
+    margin-bottom: 0 !important;
+  }
+
+  #bar {
+    display: initial;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  /*  */
+}
