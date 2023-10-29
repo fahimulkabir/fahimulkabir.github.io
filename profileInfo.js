@@ -1,7 +1,7 @@
 const jCategory = [
   {
     index: 0,
-    userImage: "../assets/users/md-fahimul-kabir-chowdhury.webp",
+    userImage: "../assets/users/md-fahimul-kabir-chowdhury.jpg",
     userAlt: "Md Fahimul Kabir Chowdhury - Founder & CEO at Tech2etc",
     userName: "Md Fahimul Kabir Chowdhury",
     shortBio:
