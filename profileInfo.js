@@ -11,7 +11,7 @@ const jCategory = [
     twiter: "https://twitter.com/Tech2etc",
     linkedin: "https://www.linkedin.com/in/fahimulkabirchowdhury/",
     github: "https://www.github.com/fahimulkabir",
-    edu: "BSC In Computer Science & Engineering",
+    edu: "Master's In Data Engineering at University of North Texas",
     work: "Founder & CEO at Tech2 etc",
     skills:
       "Artificial Intelligence, Machine Learning, React, Redux, Typescript, Next, MongoDB etc",
@@ -137,6 +137,9 @@ const jCategory = [
 
     contro: "12+",
     contribution:
+      "<a href='https://github.com/fahimulkabir/Credit-Card-Fraud-Detection' target='__blank__'>Credit Card Fraud Detection using Machine Learning</a>" +
+      "<a href='https://github.com/fahimulkabir/Electronics-Store-Analysis' target='__blank__'>eCommerce Data Analysis and Demand Forecasting</a>" +
+      "<a href='https://www.youtube.com/playlist?list=PL9bD98LkBR7ONxaKGJjcP0aWXgTNbOwno' target='__blank__'>JSTACK - A multi purpose job portal website</a>" +
       "<a href='https://youtu.be/rmq3vOC-HEE' target='__blank__'>OrbitHub - Open source platform for NASA Space App Challenge 2023</a>" +
       "<a href='https://ielts-test-collection.netlify.app/' target='__blank__'>IELTS - Students Collection(Open Source)</a>" +
       "<a href='https://youtu.be/0dOSLhPzSGI' target='__blank__'>Trippy - A Tour and travel agency website</a>" +
