@@ -17,12 +17,13 @@ const jCategory = [
       "Artificial Intelligence, Machine Learning, React, Redux, Typescript, Next, MongoDB etc",
     breifBio:
       "Recently graduated with Computer Science & Engineering degree. I enjoy learning and I have a passion for teaching others. That's why I wanted to create a group of programmers where we can all help each other by sharing knowledge. I want to keep teaching and grow this community into a larger group of people who support and learn from one another. Wish me luck!",
+    
     position1:
       "<h4>Founder & CEO - <a href='https://youtube.com/@Tech2etc' target='__blank__'>Tech2 etc</a></h4>" +
       "<span>2020 - Present</span>" +
       "<ul>" +
       "<li>Launched Tech2etc for tech knowledge sharing.</li>" +
-      "<li>Helping 130k+ students to build their career.</li>" +
+      "<li>Helping 160k+ students to build their career.</li>" +
       "<li>Providing top-quality content and tutorials.</li>" +
       "<li>Foster collaborations with experts and influencers.</li>" +
       "<li>Drive growth through strategic marketing.</li>" +
@@ -30,9 +31,21 @@ const jCategory = [
       "<li>Lead operations and adapt to tech trends.</li>" +
       "</ul>" +
       "<br>" +
-      "<strong>Skills</strong>: Digital Marketing · Presentation Skills · Team Leadership · Leadership · Strategic Planning · Project Planning · React.js · Next.js · JavaScript · Front-End Development · Web Development · Video Editing · Web Content Writing · Web Design",
+      "<strong>Skills</strong>: Digital Marketing · Presentation Skills · Team Leadership · Leadership · Strategic Planning · Project Planning · React.js · Next.js · JavaScript · Front-End Development · Web Development",
 
     position2:
+      "<h4>Graduate Research Assistant - <a href='https://www.unt.edu/' target='__blank__'>University of North Texas</a></h4>" +
+      "<span>Nov 2024 - Present</span>" +
+      "<ul>" +
+      "<li>Conducted research on transactional behaviour analysis, improving relative accuracy on an open-source dataset by 17%.</li>" +
+      "<li>Collaborated with PhD students to design and test benchmark transformer architectures and custom CNNs.</li>" +
+      "<li>Mentored 150+ undergraduate students, assisting with Data Mining, Deep learning coursework and assignments.</li>" +
+      "</ul>" +
+      "<br>" +
+      "<strong>Skills</strong>: Machine Learning · Deep Learning · Image Vision · Object Detection · Instance Segmentation · Data Analysis · Image processing",
+
+    
+    position3:
       "<h4>Founder & CEO - <a href='https://azurostudio.com' target='__blank__'>AzuroStudio</a></h4>" +
       "<span>2023 - Present</span>" +
       "<ul>" +
@@ -43,9 +56,9 @@ const jCategory = [
       "<li>Lead operations and adapt to tech trends.</li>" +
       "</ul>" +
       "<br>" +
-      "<strong>Skills</strong>: Digital Marketing · Team Leadership · Leadership · Strategic Planning · Project Planning · SEO Optimization · Web Development · Video Editing · Digital Marketing · Web Design",
+      "<strong>Skills</strong>: Leadership · Project Planning · SEO Optimization · Web Development · Video Editing · Digital Marketing · Web Design",
 
-    position3:
+    position4:
       "<h4>Instructor - <a href='https://www.udemy.com/user/md-fahimul-kabir-chowdhury' target='__blank__'>Udemy</a></h4>" +
       "<span>2023 - Present</span>" +
       "<ul>" +
@@ -58,7 +71,7 @@ const jCategory = [
       "<br>" +
       "<strong>Skills</strong>: Digital Marketing · Presentation Skills · Communication · Sales · Coaching · Teaching · Training · Front-End Design",
 
-    position4:
+    position5:
       "<h4>Technical Writer - <a href='https://dev.to/fahimulkabir' target='__blank__'>Dev.to</a></h4>" +
       "<span>2021 - Present</span>" +
       "<ul>" +
@@ -73,29 +86,27 @@ const jCategory = [
       "<strong>Skills</strong>: Search Engine Optimization (SEO) · Writing · Article Writing · Community Outreach · Community Engagement · Knowledge Sharing",
 
     pastJ1:
-      "<h4>Web Developer(Contract) - <a href='https://www.virtualmq.com/' target='__blank__'>VirtualMQ</a></h4>" +
-      "<span>2021 - 2022</span>" +
+      "<h4>Data Science Engineering(Intern) - <a href='https://www.tigerit.com/' target='__blank__'>TigerIT</a></h4>" +
+      "<span>June 2022 - Sept 2022</span>" +
       "<ul>" +
-      "<li>Virtual MQ, an initiative of Market Quotient (a top-rated global consulting firm) focusses into providing skilled experts on-demand through its wide pool of exceptional resource bench servicing clients across the globe.</li>" +
-      "<li>Semantic HTML tags to improve accessibility and SEO</li>" +
-      "<li>Pure CSS Styling.</li>" +
-      "<li>Dynamic JavaScript.</li>" +
-      "<li>JavaScript & CSS Animation(No third-party library)</li>" +
-      "<li>Testing and Optimization</li>" +
+      "<li>Designed and optimized a scalable ETL data pipeline using Apache Spark and AWS S3 to ingest and process 200 GB of raw data daily.</li>" +
+      "<li>Improved data availability for analytics teams by 40% and reduced data processing time from 12 hours to 4 hours.</li>" +
+      "<li>Aggregated and cleaned sales data for predictive analytics, improving demand forecasting accuracy by 30% and reducing inventory costs by $20,000 annually.</li>" +
       "</ul>" +
       "<br>" +
-      "<strong>Skills</strong>: Attention to Detail · Web Pages · User Experience (UX) · Mobile Design · Color Theory · Responsive Web Design · User Interface Design · Landing Pages · Animation · HTML5 · CSS · JavaScript · Web Design",
-
+      "<strong>Skills</strong>: Python · SQL · ETL · Agile · Machine Learning · Deep Learning · Data Pipeline · Apache Spark · AWS S3 · Hadoop · Forecasting",
+      
     pastJ2:
-      "<h4>Wordpress Developer(Intern) - <a href='https://www.tigerit.com/' target='__blank__'>TigerIT</a></h4>" +
-      "<span>March 2022 - June 2022</span>" +
+      "<h4>Web Developer(Contract) - <a href='https://www.marketquotient.com/' target='__blank__'>Market Quotient</a></h4>" +
+      "<span>Oct 2021 - May 2022</span>" +
       "<ul>" +
-      "<li>Build, design, and SEO optimize WordPress websites with a scalable user experience, increased conversion rates, and speed.</li>" +
-      "<li>Collaborate with internal teams to create landing pages and optimize the user experience.</li>" +
-      "<li>Brainstorm new and creative growth strategies for the products.</li>" +
+      "<li>Market Quotient, a top-rated global consulting firm focusses into providing skilled experts on-demand through its wide pool of exceptional resource bench servicing clients across the globe.</li>" +
+      "<li>Collaborated in an Agile Project Management environment, improving NEXT.JS structure and SEO rankings.</li>" +
+      "<li>Introduced dynamic interactivity using JavaScript and CSS animations, increasing user engagement by 30%.</li>" +
+      "<li>Optimized performance, reducing page load times by 40% through testing, minimizing file sizes, and implementing image optimization.</li>" +
       "</ul>" +
       "<br>" +
-      "<strong>Skills</strong>: Wordpress Development · Web Pages · User Experience (UX) · Mobile Design · Theme Customization · Responsive Web Design · Landing Pages · Animation · Web Design",
+      "<strong>Skills</strong>: React JS · Next JS · User Experience (UX) · Mobile Design · Color Theory · Responsive Web Design · User Interface Design · Animation · HTML5 · CSS · JavaScript",
 
     researchExp:
       "<h4>Research Assistant (Volunteer)</h4>" +
