@@ -1,6 +1,6 @@
 ---
-title: "New Grant Awarded"
-date: 2025-12-01
+title: Best Thesis Presenter(Defense)​, University of Science and Technology
+  Chittagong.
+date: 2022-05-04T00:00:00.000-05:00
 ---
-
-I will be discussing the topic of _“Promote a Safe Use of Vision-Language Models for Healthcare”_ at the **LLM Workshop 2025**.
+**Best Thesis Presenter (Defense)**​, University of Science and Technology Chittagong.
