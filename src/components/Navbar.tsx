@@ -1,0 +1,95 @@
+import { Link, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NAVIGATION } from "../config/navLinks";
+import "../styles/navbar.css";
+import { loadSiteSettings } from "../utils/loadSiteSettings";
+import type { SiteSettings } from "../types/site";
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [siteSettings, setSiteSettings] = useState<SiteSettings | null>(null);
+
+  useEffect(() => {
+    loadSiteSettings().then((data) => {
+      setSiteSettings(data);
+      document.title = data.title;
+    });
+  }, []);
+
+  if (!siteSettings) return null;
+
+  // 👉 Filter the navigation array dynamically based on CMS settings
+  const visibleNavItems = NAVIGATION.filter((item) => {
+    if (!item.settingKey) return true; // Show items without a toggle by default
+
+    // Use the settingKey to look up the true/false value in siteSettings
+    const isVisible = siteSettings[item.settingKey as keyof SiteSettings];
+    return isVisible === true;
+  });
+
+  return (
+    <header className="site-header">
+      <div className="container obj-width">
+        <Link to="/" className="logo">
+          {siteSettings.navbarTitle}
+        </Link>
+
+        <button
+          className="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        <nav
+          className={`nav ${menuOpen ? "open" : ""}`}
+          aria-label="Main navigation"
+        >
+          <ul>
+            {/* 👉 Map over the filtered array instead of the raw NAVIGATION array */}
+            {visibleNavItems.map((item, idx) => (
+              <li key={idx} className={item.children ? "dropdown" : ""}>
+                {!item.children &&
+                  item.path &&
+                  (item.external ? (
+                    <a
+                      href={item.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <NavLink to={item.path} onClick={() => setMenuOpen(false)}>
+                      {item.label}
+                    </NavLink>
+                  ))}
+
+                {item.children && (
+                  <>
+                    <span className="dropdown-label">{item.label}</span>
+                    <ul className="dropdown-menu">
+                      {item.children.map((child, i) => (
+                        <li key={i}>
+                          <a
+                            href={child.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {child.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
