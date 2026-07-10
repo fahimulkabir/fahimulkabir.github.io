@@ -1,19 +1,9 @@
-# For Netlify backend:
-#   name: git-gateway
-#   branch: main # Branch to update (optional; defaults to master)
-
-# For Cloudflare backend:
-# backend:
-#   name: github
-#   repo: ${CMS_REPO}
-#   branch: main
-
 backend:
   name: github
-  repo: fahimulkabir/academic-portfolio
+  repo: fahimulkabir/fahimulkabir.github.io
   branch: main
   auth_scope: repo
-  base_url: https://fahimulkabir-academic-portfolio.vercel.app/
+  base_url: https://fahimulkabirgithubio.vercel.app
   auth_endpoint: api/auth
 
 site_url: https://fahimulkabir-academic-portfolio.vercel.app/
