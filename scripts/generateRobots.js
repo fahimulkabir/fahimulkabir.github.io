@@ -1,29 +1,37 @@
 import fs from "fs";
 import path from "path";
 
-// Smart URL Detection Function
+// 🧠 Smart CMS URL Detection Function
 function getSiteUrl() {
-  // 1. Check if user manually set a custom domain
-  if (process.env.SITE_URL) return process.env.SITE_URL;
+  try {
+    // 1. Read the CMS configuration file
+    const configPath = path.join(process.cwd(), "public", "admin", "config.yml");
+    const configContent = fs.readFileSync(configPath, "utf-8");
 
-  // 2. Auto-detect Vercel Production URL
+    // 2. Search for the "site_url:" line using regex
+    const match = configContent.match(/site_url:\s*(https?:\/\/[^\s]+)/);
+
+    if (match && match[1]) {
+      let url = match[1].trim();
+      
+      // 3. Strip any trailing slash so we don't get double slashes in our paths
+      if (url.endsWith("/")) {
+        url = url.slice(0, -1);
+      }
+      return url;
+    }
+  } catch (error) {
+    console.warn("⚠️ Could not read config.yml for site_url.");
+  }
+
+  // 4. Fallbacks (Just in case the config file is missing)
+  if (process.env.SITE_URL) return process.env.SITE_URL;
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
   }
-  // Fallback for Vercel Preview deployments
-  if (process.env.VERCEL_URL) {
-    return `https://${process.env.VERCEL_URL}`;
-  }
 
-  // 3. Auto-detect GitHub Pages URL
-  if (process.env.GITHUB_ACTIONS && process.env.GITHUB_REPOSITORY) {
-    const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
-    return `https://${owner}.github.io/${repo}`;
-  }
-
-  // 4. Fallback if run locally without variables
   console.warn(
-    "WARNING: Could not auto-detect URL. Using fallback for robots.txt.",
+    "⚠️ WARNING: Could not auto-detect URL from config.yml. Using fallback for robots.txt."
   );
   return "https://YOUR-URL-HERE.com";
 }
