@@ -33,7 +33,15 @@ export default function UsersProfile() {
       {/* Right */}
       <div className="user-info">
         <h2>{prof.name}</h2>
-        <ReactMarkdown>{prof.body}</ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            p: ({ node, ...props }) => (
+              <p style={{ marginBottom: "1rem", lineHeight: "1.6" }} {...props} />
+            ),
+          }}
+        >
+          {prof.body}
+        </ReactMarkdown>
 
         <div id="show-more">
           {prof.cv && (
