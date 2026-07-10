@@ -1,14 +1,14 @@
 ---
-title: "Example Lab"
-baseUrl: "https://fahimul-academic-portfolio.netlify.app/"
-yourFirstName: John
-yourLastName: Doe
-navbarTitle: John Doe
+title: Md Fahimul Kabir Chowdhury
+baseUrl: https://fahimulkabir.github.io/
+yourFirstName: Md Fahimul Kabir
+yourLastName: Chowdhury
+navbarTitle: Md Fahimul Kabir
 allowIndexing: true
 disallowAdmin: true
-showHome: true
 showPublications: true
 showResearch: true
-showMembers: true
-showJoinUs: true
+showMembers: false
+showJoinUs: false
+showHome: true
 ---
