@@ -7,7 +7,7 @@ navbarTitle: Md Fahimul Kabir
 allowIndexing: true
 disallowAdmin: true
 showPublications: true
-showResearch: true
+showResearch: false
 showMembers: false
 showJoinUs: false
 showHome: true
