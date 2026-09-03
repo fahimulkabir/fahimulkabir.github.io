@@ -1,7 +1,7 @@
 ---
 name: Md Fahimul Kabir Chowdhury
 image: uploads/md_fahimul_kabir_chowdhury.png
-cv: uploads/your-cv.pdf
+cv: https://docs.google.com/document/d/e/2PACX-1vS0sA3IHB4aHgLGGtR-CdxAXZR46qDY0c3eUbzPzsFyfRo9ba7XJFgSqSXuZNebpI18Y5ksWxd668aW/pub
 googleScholar: https://scholar.google.com/citations?hl=en&user=EQToCZwAAAAJ&view_op=list_works&sortby=pubdate
 orcid: "#"
 linkedin: https://www.linkedin.com/in/fahimulkabirchowdhury/
